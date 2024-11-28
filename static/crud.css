@@ -1,0 +1,74 @@
+body{
+    background-color: #536d88;
+    background-image: url(../static/morado.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% auto;
+    text-align: center;
+}
+header{
+    background-image: url(../static/azul2.jpg);
+    height: 20vh;
+    text-align: center;
+}
+header section h1 b{
+    color: #000000;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size:90px;
+}
+header section h1 a{
+    float: right;
+}
+
+header section h2 a{
+    float: left;
+}
+
+body section table{
+    background: linear-gradient(rgba(0, 195, 255, 0.733), rgba(255, 192, 203, 0.479));    margin: 10px 650px;
+    font-size:18px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(0, 4, 255, 0.63);
+    border-radius: 20px;
+}
+
+body section table tr{
+    font-weight: bold;
+    text-align: center;
+}
+
+body section form label{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-style: double;
+    border-color: rgba(66, 66, 66, 0.63);
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+body section p{
+    background-color: rgb(56, 85, 250);
+    font-size:18px;
+    font-weight: bold;
+
+}
+body section form{
+    border-radius: 5%;
+    align-items:safe;
+    background: linear-gradient(rgb(182, 169, 255), rgba(255, 255, 255, 0.041));    
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 50px);
+  
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+body section form input{
+    font-size:20px;
+    border-color: rgba(0, 4, 255, 0.63);
+}
+
