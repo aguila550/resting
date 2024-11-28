@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USUARIOS REGISTRADOS</title>
+</head>
+<body>
+
+    <section>
+
+        <p>TABLA DE USUARIOS REGISTRADOS</p>
+        
+        <table border="1px">
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>numero</th>
+                <th>direccion</th>
+                <th>correo</th>
+                <th>opciones</th>
+            </tr>
+
+
+        {%for row in contenidoTabla%}
+            <tr>
+                <td>{{row.id}} </td>
+                <td>{{row.Nombre}} </td>
+                <td>{{row.Numero}} </td>
+                <td>{{row.Direccion}} </td>
+                <td>{{row.Correo}} </td>
+                <th><a href="/editar?id={{row.id}}">editar</a><p></p><a href="/eliminar{{'row.id'}}">eliminar</a></th>
+            </tr>
+            {%endfor%}
+
+            <div>
+                <p>ir a <a href="/crud">ingresar usuario</a></p>
+                <h2><a href="/"><img src="../static/Logo.png" alt="Volver al inicio" width="200px" height="200px"></a></h2><h1><b>CAFE EL INGE</b></h2>
+            </div>
+
+        </table>
+    </section>
+
+    <footer>
+            <p> Copyright © 2024 CAFE EL INGE </p>
+    </footer>
+    
+</body>
+</html>

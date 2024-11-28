@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+</head>
+<body>
+    <p>estas en el carrito</p>
+    <a href="/">inicio</a>
+
+    <section>
+        <table border="1px">
+            <tr>
+                <td>numero de producto</td>
+                <td>nombre</td>
+                <td>Precio</td>
+                <td>cantidad</td>
+                <td>eliminar</td>
+            </tr>
+            {%for row in contenidoTabla2 %}
+            <tr>
+                <td>{{row.id}} </td>
+                <td>{{row.nombre}} </td>
+                <td>${{row.cantidad}} </td>
+                <td>{{row.precio}} </td>
+                <td><a href="/eliminar?id={{row.id}}">eliminar</a></td>
+
+            </tr>
+            {%endfor%}
+
+        </table>
+    </section>
+    
+</body>
+</html>

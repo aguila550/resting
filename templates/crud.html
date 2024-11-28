@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud</title>
+</head>
+<body>
+    <section>  
+
+        <p>INGRESAR USUARIOS</p>
+
+
+        <form class="form1" action="/crud" method="POST">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" required>
+            <label for="Numero">Numero:</label>
+            <input type="tel" name="Numero" required>
+            <label for="Direccion">Direccion:</label>
+            <input type="text" name="Direccion" required>
+            <label for="Correo">Correo:</label>
+            <input type="text" name="Correo" required>
+
+            <input type="submit" name="subir_nuevo" value="Nuevo Usuario">
+
+            <div>
+                <p>ir a <a href="/tabla">tabla</a></p>
+                <h2><a href="/"><img src="../static/Logo.png" alt="Volver al inicio" width="200px" height="200px"></a></h2>
+            </div>
+            
+        </form>
+    </section>    
+
+    <footer>
+        
+            <p> Copyright © 2024 CAFE EL INGE </p>
+    </footer>
+
+</body>
+</html>
